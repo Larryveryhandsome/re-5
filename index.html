@@ -1,1 +1,351 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>滿築5 專案行銷進度總整理</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        h2 {
+            background-color: #ffcc00;
+            color: #333;
+            padding: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+            margin: 10px 0;
+        }
+        .content {
+            display: none;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 10px 0;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        ul {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+        .priority-high {
+            color: red;
+        }
+        .priority-medium {
+            color: orange;
+        }
+        /* 左右分欄設計 */
+        .schedule-container {
+            display: flex;
+            justify-content: space-between;
+        }
+        .schedule-left {
+            width: 30%;
+            padding-right: 10px;
+        }
+        .schedule-right {
+            width: 65%;
+            padding-left: 10px;
+        }
+        .schedule-right h4 {
+            margin: 10px 0;
+            color: #333;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>滿築5 專案行銷進度總整理</h1>
+        <p style="text-align: center;">更新至 2025/3/27</p>
 
+        <!-- 專案基本資訊 -->
+        <h2 onclick="toggleContent('basicInfo')">專案基本資訊</h2>
+        <div id="basicInfo" class="content">
+            <p><strong>專案名稱：</strong>滿築5</p>
+            <p><strong>專案負責人：</strong>林其衞</p>
+            <p><strong>專案目標：</strong>完成滿築5的行銷與銷售，包含帆布與旗幟製作、現場駐點安排、使用執照申請、廣告啟動等任務</p>
+            <p><strong>工作人員名單：</strong>林其衞、茗傑、副店（林緁締）、詩晴</p>
+        </div>
+
+        <!-- 帆布與定點使用狀況 -->
+        <h2 onclick="toggleContent('canvasStatus')">一、帆布與定點使用狀況</h2>
+        <div id="canvasStatus" class="content">
+            <table>
+                <tr>
+                    <th>編號</th>
+                    <th>地點</th>
+                    <th>使用期限</th>
+                    <th>房東</th>
+                    <th>備註</th>
+                </tr>
+                <tr>
+                    <td>1️⃣</td>
+                    <td>義成路三段302號牆（大帆布1）</td>
+                    <td>3/30 到期</td>
+                    <td>張先生 ☎️ 0932-265062</td>
+                    <td>需優先聯絡，帆布是否續用</td>
+                </tr>
+                <tr>
+                    <td>2️⃣</td>
+                    <td>東山永興路一段1號下層（大帆布2）</td>
+                    <td>5/9 到期</td>
+                    <td>陳逢春 ☎️ 0199-03266</td>
+                    <td>屆期需確認續掛</td>
+                </tr>
+            </table>
+            <p><strong>林其衞指示：</strong>可直接致電房東聯絡，不需另安排會面。</p>
+            <p><strong>負責人：</strong>林其衞</p>
+            <p><strong>行動計畫：</strong></p>
+            <ul>
+                <li>3/28 前聯繫張先生，確認義成路帆布是否續用，若續用則與天下廣告協調施工時間。</li>
+                <li>4/30 前聯繫陳逢春，確認永興路帆布是否續掛，若續掛則提前安排施工。</li>
+            </ul>
+        </div>
+
+        <!-- 現場駐點安排 -->
+        <h2 onclick="toggleContent('onsiteSchedule')">二、現場駐點安排</h2>
+        <div id="onsiteSchedule" class="content">
+            <p><strong>起始日期：</strong>2025/4/1 開始正式現場駐點</p>
+            <h3>人員排班</h3>
+            <table>
+                <tr>
+                    <th>日期</th>
+                    <th>負責人</th>
+                    <th>備註</th>
+                </tr>
+                <tr>
+                    <td>周一至周五</td>
+                    <td>茗傑</td>
+                    <td>負責現場接待與客戶諮詢</td>
+                </tr>
+                <tr>
+                    <td>周六與周日</td>
+                    <td>副店（林緁締）</td>
+                    <td>負責現場接待與客戶諮詢</td>
+                </tr>
+            </table>
+            <p><strong>負責人：</strong>副店（林緁締）</p>
+            <p><strong>行動計畫：</strong></p>
+            <ul>
+                <li>3/30 前確認排班表，確保無特殊狀況（如請假、突發事件）。</li>
+                <li>若有特殊狀況，安排備案人員（建議由林其衞或詩晴替補）。</li>
+            </ul>
+        </div>
+
+        <!-- 使用執照狀況 -->
+        <h2 onclick="toggleContent('licenseStatus')">三、使用執照狀況</h2>
+        <div id="licenseStatus" class="content">
+            <p><strong>目前進度：</strong>由吳培慧提供資訊，預計4月初下來（尚未確定具體日期）</p>
+            <p><strong>後續行動：</strong></p>
+            <ul>
+                <li>使照下來後，立即補交專任委託書。</li>
+                <li>快速啟動廣告（物調提前準備）。</li>
+            </ul>
+            <p><strong>負責人：</strong>副店（林緁締）、物調負責人（建議由詩晴負責物調準備）</p>
+            <p><strong>行動計畫：</strong></p>
+            <ul>
+                <li>3/30 前與吳培慧確認使照具體日期，確保4月初能順利取得。</li>
+                <li>4/1 前由詩晴完成物調資料準備，確保使照下來後可立即啟動廣告。</li>
+                <li>使照取得後，由副店（林緁締）負責補交專任委託書，並啟動廣告投放。</li>
+            </ul>
+        </div>
+
+        <!-- 帆布與旗幟製作 -->
+        <h2 onclick="toggleContent('canvasProduction')">四、帆布與旗幟製作</h2>
+        <div id="canvasProduction" class="content">
+            <p><strong>目前進度：</strong>已詢價、排程中</p>
+            <p><strong>目標時程：</strong>須於 7個工作天內完成製作（即4/7前完成）</p>
+            <p><strong>負責廠商：</strong>天下廣告</p>
+            <p><strong>聯絡窗口：</strong>詩晴</p>
+            <p><strong>行動計畫：</strong></p>
+            <ul>
+                <li>3/28 前由詩晴與天下廣告確認製作細節（尺寸、數量、設計稿），並正式下單。</li>
+                <li>4/1 起每日跟進製作進度，確保4/7前完成。</li>
+                <li>製作完成後，由林其衞與天下廣告協調帆布與旗幟的掛置時間與地點。</li>
+            </ul>
+        </div>
+
+        <!-- 當前緊急任務列表 -->
+        <h2 onclick="toggleContent('urgentTasks')">五、當前緊急任務列表</h2>
+        <div id="urgentTasks" class="content">
+            <table>
+                <tr>
+                    <th>優先級</th>
+                    <th>項目</th>
+                    <th>負責人</th>
+                    <th>備註</th>
+                </tr>
+                <tr>
+                    <td class="priority-high">🔴 高</td>
+                    <td>旗幟、帆布製作下單與完工</td>
+                    <td>詩晴（聯絡天下廣告）</td>
+                    <td>限時7個工作天（4/7前完成）</td>
+                </tr>
+                <tr>
+                    <td class="priority-high">🔴 高</td>
+                    <td>使照取得後立即補上廣告</td>
+                    <td>副店（林緁締） / 物調負責人（詩晴）</td>
+                    <td>物調應提前備好</td>
+                </tr>
+                <tr>
+                    <td class="priority-high">🔴 高</td>
+                    <td>帆布掛置點房東聯繫</td>
+                    <td>林其衞</td>
+                    <td>包含義成路與永興路地點</td>
+                </tr>
+                <tr>
+                    <td class="priority-high">🔴 高</td>
+                    <td>廠商對接與掛置安排</td>
+                    <td>林其衞</td>
+                    <td>與帆布廠或施工人員聯繫</td>
+                </tr>
+                <tr>
+                    <td class="priority-medium">🟡 中</td>
+                    <td>確認現場人員班表執行與備案</td>
+                    <td>副店（林緁締）</td>
+                    <td>特殊狀況須有替補人員規劃</td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- 當天駐點安排（左右分欄） -->
+        <h2 onclick="toggleContent('schedule')">六、當天駐點安排（以4/1為例）</h2>
+        <div id="schedule" class="content">
+            <div class="schedule-container">
+                <!-- 左半邊：時程表 -->
+                <div class="schedule-left">
+                    <table>
+                        <tr>
+                            <th>時間</th>
+                            <th>內容</th>
+                        </tr>
+                        <tr>
+                            <td>09:00-09:30</td>
+                            <td>現場準備與佈置</td>
+                        </tr>
+                        <tr>
+                            <td>09:30-12:00</td>
+                            <td>上午駐點接待</td>
+                        </tr>
+                        <tr>
+                            <td>12:00-13:00</td>
+                            <td>午休</td>
+                        </tr>
+                        <tr>
+                            <td>13:00-17:00</td>
+                            <td>下午駐點接待</td>
+                        </tr>
+                        <tr>
+                            <td>17:00-17:30</td>
+                            <td>現場整理與結案</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <!-- 右半邊：詳細安排 -->
+                <div class="schedule-right">
+                    <h4>09:00-09:30 現場準備與佈置</h4>
+                    <p><strong>會用到的道具：</strong>帆布、旗幟、接待桌椅、專案DM、名片、簽到表</p>
+                    <p><strong>負責人手：</strong>茗傑（周一至周五駐點人員）、詩晴（協助佈置）</p>
+                    <p><strong>具體任務：</strong></p>
+                    <ul>
+                        <li>茗傑：負責現場接待區佈置，設置桌椅與DM，確認帆布與旗幟是否掛置完成。</li>
+                        <li>詩晴：協助準備簽到表與名片，檢查現場環境（電源、遮陽設備等）。</li>
+                    </ul>
+
+                    <h4>09:30-12:00 上午駐點接待</h4>
+                    <p><strong>會用到的道具：</strong>專案DM、名片、簽到表、平板（展示專案資訊）</p>
+                    <p><strong>負責人手：</strong>茗傑</p>
+                    <p><strong>具體任務：</strong></p>
+                    <ul>
+                        <li>茗傑：接待客戶，介紹滿築5專案，記錄客戶聯繫方式，發放DM與名片。</li>
+                        <li>詩晴：若有突發狀況（如客戶量過多），可臨時支援接待。</li>
+                    </ul>
+                    <p><strong>後續安排：</strong>上午接待結束後，茗傑整理客戶資料，準備午休。</p>
+
+                    <h4>12:00-13:00 午休</h4>
+                    <p><strong>會用到的道具：</strong>無</p>
+                    <p><strong>負責人手：</strong>茗傑</p>
+                    <p><strong>具體任務：</strong></p>
+                    <ul>
+                        <li>茗傑：午休，確保現場物品安全（鎖好平板與資料）。</li>
+                    </ul>
+                    <p><strong>後續安排：</strong>午休結束後，茗傑繼續下午駐點接待。</p>
+
+                    <h4>13:00-17:00 下午駐點接待</h4>
+                    <p><strong>會用到的道具：</strong>專案DM、名片、簽到表、平板</p>
+                    <p><strong>負責人手：</strong>茗傑</p>
+                    <p><strong>具體任務：</strong></p>
+                    <ul>
+                        <li>茗傑：繼續接待客戶，解答問題，記錄潛在客戶資訊。</li>
+                        <li>詩晴：若有需要，可協助接待或補充DM。</li>
+                    </ul>
+                    <p><strong>後續安排：</strong>下午接待結束後，茗傑整理現場，準備結案。</p>
+
+                    <h4>17:00-17:30 現場整理與結案</h4>
+                    <p><strong>會用到的道具：</strong>簽到表、客戶資料表</p>
+                    <p><strong>負責人手：</strong>茗傑、詩晴</p>
+                    <p><strong>具體任務：</strong></p>
+                    <ul>
+                        <li>茗傑：整理客戶資料，確認簽到表與DM剩餘數量，收拾桌椅。</li>
+                        <li>詩晴：協助整理現場，檢查帆布與旗幟狀況，確保無損壞。</li>
+                        <li>林其衞：當天結束後，與茗傑確認客戶反饋與潛在銷售線索。</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- 後續追蹤 -->
+        <h2 onclick="toggleContent('followUp')">七、後續追蹤</h2>
+        <div id="followUp" class="content">
+            <ul>
+                <li>4/7 前確認帆布與旗幟製作完成並掛置（林其衞、詩晴負責）。</li>
+                <li>4/10 前確認使照取得情況，啟動廣告投放（副店、詩晴負責）。</li>
+                <li>4/15 前檢視現場駐點情況，收集客戶反饋，調整行銷策略（林其衞、茗傑負責）。</li>
+                <li>5/1 前再次確認永興路帆布續掛情況（林其衞負責）。</li>
+                <li>持續跟進客戶聯繫，安排後續看房與成交（副店、茗傑負責）。</li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        function toggleContent(id) {
+            const content = document.getElementById(id);
+            if (content.style.display === "block") {
+                content.style.display = "none";
+            } else {
+                content.style.display = "block";
+            }
+        }
+    </script>
+</body>
+</html>
